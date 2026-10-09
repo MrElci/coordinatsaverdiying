@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KoordinatSaver Di Ying — Giriş</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <div class="login-brand">
+      <div class="brand-mark">◈</div>
+      <h1>KoordinatSaver <span>Di Ying</span></h1>
+      <p class="sub">Yetkili erişim terminali</p>
+    </div>
+
+    <form id="loginForm" autocomplete="off">
+      <div class="field">
+        <input type="text" id="username" placeholder=" " autocomplete="off" spellcheck="false" required>
+        <label for="username">Kullanıcı adı</label>
+      </div>
+      <div class="field">
+        <input type="password" id="password" placeholder=" " required>
+        <label for="password">Şifre</label>
+      </div>
+      <button type="submit">Giriş Yap</button>
+      <div class="error" id="err"></div>
+    </form>
+
+    <p class="note">Hesap oluşturulamaz. Yalnızca kayıtlı operatörler giriş yapabilir.</p>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

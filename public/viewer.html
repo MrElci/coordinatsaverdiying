@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viewer — KoordinatSaver Di Ying</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+  <header class="topbar">
+    <div class="tb-left">
+      <span class="logo">◈ KoordinatSaver</span>
+      <span class="badge">DI YING · VIEWER</span>
+    </div>
+    <div class="tb-right">
+      <span class="user">● <b id="userName">—</b></span>
+      <button class="btn ghost" id="logoutBtn">Çıkış</button>
+      <a class="btn gold" href="newsave.html" title="Yeni kayıt">+</a>
+    </div>
+  </header>
+
+  <main class="desktop" id="desktop">
+    <div class="empty">Yükleniyor…</div>
+  </main>
+
+  <!-- Kayıt penceresi -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal">
+      <div class="modal-bar">
+        <span class="title">Kayıt <b id="mFileName">—.cor</b></span>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-left">
+          <div class="modal-img" id="mImg"></div>
+          <div>
+            <div class="modal-name"><span id="mName">—</span><span class="ext">.cor</span></div>
+            <div class="modal-desc" id="mDesc" style="margin-top:14px">—</div>
+          </div>
+          <div class="coord-block">
+            <div class="coord-label">KOORDİNAT</div>
+            <div class="coord-value" id="mCoord">—</div>
+          </div>
+        </div>
+
+        <div class="modal-right">
+          <div class="act-title">
+            <span><span class="dot"></span>PLAYER ACTIVITY</span>
+            <span style="color:var(--muted);letter-spacing:0">playeract.txt</span>
+          </div>
+          <div class="act-list" id="mAct"></div>
+          <button class="act-btn" id="actBtn">◉ Oyuncu Aktivitesine Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="viewer.js"></script>
+</body>
+</html>

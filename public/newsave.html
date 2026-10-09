@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>New Save — KoordinatSaver Di Ying</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+  <header class="topbar">
+    <div class="tb-left">
+      <span class="logo">◈ KoordinatSaver</span>
+      <span class="badge">DI YING · NEW SAVE</span>
+    </div>
+    <div class="tb-right">
+      <span class="user">● <b id="userName">—</b></span>
+      <a class="btn ghost" href="viewer.html">← Viewer</a>
+      <button class="btn ghost" id="logoutBtn">Çıkış</button>
+    </div>
+  </header>
+
+  <main class="form-wrap">
+    <div class="form-card">
+      <h2>Yeni Koordinat Kaydı</h2>
+      <p class="fc-sub">Player activity hariç tüm alanlar doldurulur. Kayıt klasörü otomatik integer olarak atanır.</p>
+
+      <form id="saveForm">
+        <div class="form-row">
+          <label class="flabel" for="coord">KOORDİNAT</label>
+          <input type="text" id="coord" placeholder="X: 1234  Y: 64  Z: -567" required>
+        </div>
+        <div class="form-row">
+          <label class="flabel" for="name">İSİM</label>
+          <input type="text" id="name" placeholder="Kale Kulesi" required>
+        </div>
+        <div class="form-row">
+          <label class="flabel" for="desc">AÇIKLAMA</label>
+          <textarea id="desc" placeholder="Kuzeydoğu kulesinin tepesinde gizli sandık…"></textarea>
+        </div>
+        <div class="form-row">
+          <label class="flabel">GÖRSEL</label>
+          <label class="file-drop" id="fileDrop">
+            <span class="fd-icon">◈</span>
+            <span class="fd-text" id="fdText">Bir görsel seç veya buraya bırak</span>
+            <input type="file" id="image" accept="image/*">
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <a class="btn ghost" href="viewer.html">İptal</a>
+          <button type="submit" class="btn primary">Kaydet</button>
+        </div>
+        <div class="form-msg" id="msg"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="newsave.js"></script>
+</body>
+</html>
